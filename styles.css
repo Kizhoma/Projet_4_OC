@@ -12,8 +12,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  padding: 0 7rem; /* peut être à changer padding: 0 7rem; et padding: 0 1rem ; pour le media querie mobile */
+li {
+  list-style-type: none;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
   position: relative;
 }
 
-main .city {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,11 +36,9 @@ main .city {
   padding: 0.5rem;
   color: #353535;
 }
-
-main .city i {
+.city i {
   font-size: 1.5rem;
 }
-
 .city h2 {
   font-family: "Roboto";
   font-style: normal;
@@ -55,7 +53,6 @@ main .city i {
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -63,13 +60,11 @@ main .city i {
   font-size: 40px;
   line-height: 47px;
 }
-
 .explorer p {
   font-size: 1rem;
   font-weight: 300;
   color: #353535;
 }
-
 .explorer button {
   color: white;
   font-weight: 500;
@@ -83,7 +78,6 @@ main .city i {
   width: 218px;
   border-radius: 25px;
 }
-
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
@@ -161,7 +155,6 @@ main .city i {
 }
 
 .menus .card {
-  height: 4rem;
   flex-grow: 1;
   /* min-width: 30rem; IDK */
 }
@@ -200,30 +193,45 @@ main .city i {
 
 /* Footer */
 footer {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #353535;
   padding: 1.5rem;
+  height: 75px;
 }
 
-footer .footer__list a {
+footer li, a, h2, i {
   color: white;
-  text-decoration: none;
 }
 
-footer .footer__list li {
-  justify-content: space-between;
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-  text-decoration: none;
+footer i {
+  margin-right: 1px;
 }
 
-footer .footer__list h2 {
+footer .footer__list {
+  display: flex;
+  align-items: center;
+}
+
+footer h2 {
+  margin-left: 10px;
   color: white;
   font-family: "Shrikhand";
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
+}
+
+footer .footer__list a {
+  text-decoration: none;
+}
+
+footer li {
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 10px;
+  text-decoration: none;
 }
 
 footer .footer__list i {
