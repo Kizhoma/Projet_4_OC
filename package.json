@@ -1,0 +1,23 @@
+{
+  "name": "premierprojet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kizhoma/OpenclassroomsProjet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kizhoma/OpenclassroomsProjet/issues"
+  },
+  "homepage": "https://github.com/Kizhoma/OpenclassroomsProjet#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
