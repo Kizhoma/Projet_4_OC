@@ -14,71 +14,78 @@
 
 <body>
     <!-- Loader -->
-
-
-
+    <div class="loader">
+        <i class="fa-solid fa-circle-notch fa-spin fa-5x"></i>
+      </div>
     <!-- Header -->
     <header>
         <h1>Ohmyfood</h1>
     </header>
-
-
-
-
     <!-- Main -->
-<main>
-    <div class="city">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" id="ville" value="Paris, Belleville">
-    </div>
+    <main>
+        <div class="city">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="ville" value="Paris, Belleville">
+        </div>
 
     <section class="explorer">
         <h2>Réserver le menu qui <br> vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         <button>Explorer nos restaurants</button>
     </section>
-
-
     <!-- Fonctionnement -->
-
-
     <section class="tuto">
         <h2>Fonctionnement</h2>
         <ol> 
-            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-            <li><i class="fas fa-list-ul"></i> votre menu</li>
-            <li><i class="fas fa-store"></i>Dégustez au restaurant</li>
+            <li><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
+            <li><i class="fa-solid fa-list-ul"></i> votre menu</li>
+            <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
         </ol>
     </section>
-
-
-
     <!-- Restaurants -->
-
-
     <section class="menus">
         <h2>Restaurants</h2>
         <div class="menus__cards">
             <a href="#" class="card">
+                <a href="./pages/la-palette-du-gout.html" class="cards new"></a>
                 <div class="card__image card__image-1"></div>
-                <div class="card__description"></div>
+                <div class="card__description">
+                <h3>La palette du gout</h3>
+                <p>Ménilmontant</p>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
             </a>
-            <a href="#" class="card">
+            <a href="./pages/la-note-enchantee.html" class="cards new">
                 <div class="card__image card__image-2"></div>
-                <div class="card__description"></div>
+                <div class="card__description">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </a>
-            <a href="#" class="card">
+            <a href="./pages/a-la-francaise.html" class="cards">
                 <div class="card__image card__image-3"></div>
-                <div class="card__description"></div>
+                <div class="card__description">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </a>
-            <a href="#" class="card">
+            <a href="./pages/le-delice-des-sens.html" class="cards">
                 <div class="card__image card__image-4"></div>
-                <div class="card__description"></div>
+                <div class="card__description">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
             </a>
         </div>
     </section>
 </main>
-
 <!-- Footer -->
 <footer>
     <ul class="footer__list">

@@ -17,7 +17,6 @@ a {
 
 li {
   list-style-type: none;
-  display: flex;
 }
 
 header {
@@ -38,24 +37,61 @@ header {
   background-color: #EAEAEA;
   text-align: center;
   padding: 0.5rem;
-  color: #353535;
 }
 .city i {
   font-size: 1.5rem;
 }
-.city h2 {
+.city input {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /*padding: 2rem; 0;*/
   margin: 0;
+  border-style: none;
+  text-align: center;
+  background: #EAEAEA;
 }
 
-/* EXPLORER */
+@-webkit-keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .explorer {
   text-align: center;
+  background-color: #F8F8F8;
+  padding: 1rem;
 }
 .explorer h2 {
   font-family: "Roboto", sans-serif;
@@ -88,4 +124,247 @@ header {
   cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.loader {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: 0.9;
+  -webkit-animation: disappear 1ms 3s forwards ease-in-out;
+          animation: disappear 1ms 3s forwards ease-in-out;
+}
+.loader i {
+  color: #E685E0;
+}
+
+@-webkit-keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+.tuto {
+  counter-reset: compteListe;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  padding: 1.5rem;
+}
+.tuto ol {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .tuto ol {
+    flex-direction: row;
+  }
+}
+.tuto li {
+  position: relative;
+  background-color: #F7F7F7;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.tuto li::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  display: inline-block;
+  background-color: #9356DC;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  place-items: center;
+  color: #F7F7F7;
+  position: absolute;
+  left: -0.75rem;
+}
+.tuto li:hover {
+  background-color: #f8edff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 200ms;
+}
+.tuto li i.fa-solid {
+  margin-right: 1rem;
+  color: #7E7E7E;
+}
+.tuto li i.fa-store {
+  color: #9356DC;
+}
+
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.menus {
+  background-color: #F6F6F6;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.menus h2 {
+  margin-bottom: 2rem;
+}
+.menus .menus__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.menus .menus__cards .new {
+  position: relative;
+}
+.menus .menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  right: 0.75rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+.menus .cards .card__image {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  height: 15rem;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url(./assets/images/restaurants/menu-1.jpg);
+}
+.menus .card__image-2 {
+  background-image: url(./assets/images/restaurants/menu-2.jpg);
+}
+.menus .card__image-3 {
+  background-image: url(./assets/images/restaurants/menu-3.jpg);
+}
+.menus .card__image-4 {
+  background-image: url(./assets/images/restaurants/menu-4.jpg);
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.menus .card__description h3 {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+.menus .card__description p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  color: black;
+}
+.menus .card__description i {
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+.menus .card__description .fa-solid {
+  color: transparent;
+}
+.menus .card__description .fa-solid:hover {
+  color: transparent;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #353535;
+  padding: 1.5rem;
+  height: 75px;
+}
+
+footer li, a, h2, i {
+  color: white;
+}
+
+footer i {
+  width: 11px;
+  margin-right: 1rem;
+}
+
+footer .footer__list {
+  display: flex;
+  align-items: center;
+}
+
+footer h2 {
+  margin-left: 10px;
+  color: white;
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+footer .footer__list a {
+  text-decoration: none;
+}
+
+footer li {
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 10px;
+  text-decoration: none;
+}
+
+footer .footer__list i {
+  width: 11px;
+  margin-right: 1rem;
 }/*# sourceMappingURL=styles.css.map */

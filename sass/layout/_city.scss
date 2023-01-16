@@ -6,22 +6,20 @@
     background-color: #EAEAEA;
     text-align: center;
     padding: 0.5rem;
-    color: #353535;
     & i {
     font-size: 1.5rem
-    /*left: 44.3%;
-    right: 54.87%;
-    top: 16px;
-    bottom: 18px; */
-    /*position: relative;*/
+    // position: relative;
     }
-    & h2 {
+
+    & input {
     font-family: 'Roboto';
-    font-style: normal;
+    // font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    /*padding: 2rem; 0;*/
+    // line-height: 19px;
     margin: 0;
+    border-style: none;
+    text-align: center;
+    background: #EAEAEA;
     }
 }

@@ -1,3 +1,4 @@
+@use "../utils/colors";
 /* Footer */
 
 footer {
@@ -14,7 +15,8 @@ footer li, a, h2, i {
 }
 
 footer i {
-    margin-right: 1px;
+    width: 11px;
+    margin-right: 1rem;
 }
 
 footer .footer__list {
