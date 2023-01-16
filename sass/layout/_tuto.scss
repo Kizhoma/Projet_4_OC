@@ -1,0 +1,62 @@
+/* Fonctionnement */
+
+.tuto li {
+    background-color: #F7F7F7;
+    /*padding: 1.5rem; 2rem;*/
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    flex-grow: 1;
+    list-style-type: none; /* Cacher les numéros que sont proposer par défaut la propriété li */
+    position: relative;
+    font-family: "Roboto";
+    font-style: normal;
+}
+
+& li:hover {
+    background-color: #f8edff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.tuto ol {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    counter-reset: compteListe;
+}
+
+.tuto li i.fas {
+    color: #7E7E7E;
+    margin-right: 1rem ;
+}
+
+.tuto li i.fa-store {
+    color: #9356DC ;
+}
+    
+
+
+.tuto li::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    color: white;
+    background-color: #9356DC;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 14.1818px;
+    line-height: 17px;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    left: -1rem;
+    transform: translateY(-50%);
+    display: grid;
+    position: absolute;
+    display: flex;
+
+}
