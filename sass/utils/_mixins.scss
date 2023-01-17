@@ -1,4 +1,4 @@
-@use "./colors;
+@use "./colors";
 
 @mixin gradient($opacity: 0.9) {
   background-image: linear-gradient(

@@ -36,13 +36,15 @@ header {
   gap: 1rem;
   background-color: #EAEAEA;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .city i {
   font-size: 1.5rem;
+  color: #353535;
+  position: relative;
 }
 .city input {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin: 0;
@@ -99,6 +101,7 @@ header {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
+  color: #000000;
 }
 .explorer p {
   font-size: 1rem;
@@ -235,14 +238,18 @@ header {
   background-color: #F6F6F6;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+  padding: 1.5rem;
 }
 .menus h2 {
   margin-bottom: 2rem;
 }
 .menus .menus__cards {
-  display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  display: flex;
 }
 @media (min-width: 1024px) {
   .menus .menus__cards {
@@ -330,7 +337,7 @@ footer {
   height: 75px;
 }
 
-footer li, a, h2, i {
+footer li, a, h3, i {
   color: white;
 }
 

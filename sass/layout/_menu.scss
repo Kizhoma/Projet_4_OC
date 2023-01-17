@@ -6,13 +6,18 @@
     background-color: #F6F6F6;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
+    max-width: 1280px;
+    margin: auto;
+    position: relative;
+    padding: 1.5rem;
     h2{
         margin-bottom: 2rem;
     }
     .menus__cards {
-        display: grid;
+        // display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
+        display: flex;
         @media (min-width: 1024px) {
             grid-template-columns: repeat(4, 1fr);
         }
@@ -41,10 +46,10 @@
         }
     }
 
-    @for $i from 1 through 4 {
-        .card__image-#{$i} {
-            background-image: url(./assets/images/restaurants/menu-#{$i}.jpg);
-        }
+     @for $i from 1 through 4 {
+            .card__image-#{$i} {
+             background-image: url(./assets/images/restaurants/menu-#{$i}.jpg);
+         }
     }
         & .card__description {
             position: relative;
@@ -88,5 +93,5 @@
             }
         
     }
-
 }
+
