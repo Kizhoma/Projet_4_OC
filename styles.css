@@ -256,6 +256,9 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.menus .menus__cards a {
+  width: 25%;
+}
 .menus .menus__cards .new {
   position: relative;
 }
@@ -351,7 +354,7 @@ footer .footer__list {
   align-items: center;
 }
 
-footer h2 {
+footer h3 {
   margin-left: 10px;
   color: white;
   font-family: "Shrikhand";
