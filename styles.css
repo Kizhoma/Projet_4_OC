@@ -35,20 +35,18 @@ header {
   justify-content: center;
   gap: 1rem;
   background-color: #EAEAEA;
-  text-align: center;
   padding: 1rem;
 }
 .city i {
   font-size: 1.5rem;
-  color: #353535;
   position: relative;
 }
 .city input {
+  border-style: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  margin: 0;
-  border-style: none;
+  margin: -40px;
   text-align: center;
   background: #EAEAEA;
 }
@@ -96,37 +94,31 @@ header {
   padding: 1rem;
 }
 .explorer h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-size: 24px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
-  color: #000000;
 }
 .explorer p {
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 300;
-  color: #353535;
 }
 .explorer button {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   color: white;
   font-weight: 500;
+  font-size: 16px;
+  padding: 1rem 2rem;
   border: none;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  transition: 200ms;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  height: 50px;
-  width: 218px;
   border-radius: 25px;
+  transition: 200ms;
 }
 .explorer button:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
-  cursor: pointer;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .loader {
@@ -196,6 +188,7 @@ header {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
+  display: grid;
   place-items: center;
   color: #F7F7F7;
   position: absolute;
@@ -238,26 +231,19 @@ header {
   background-color: #F6F6F6;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  max-width: 1280px;
-  margin: auto;
-  position: relative;
-  padding: 1.5rem;
 }
 .menus h2 {
   margin-bottom: 2rem;
 }
 .menus .menus__cards {
+  display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  display: flex;
 }
 @media (min-width: 1024px) {
   .menus .menus__cards {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.menus .menus__cards a {
-  width: 25%;
 }
 .menus .menus__cards .new {
   position: relative;
@@ -303,6 +289,7 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  line-height: 21px;
   color: black;
 }
 .menus .card__description p {
@@ -310,6 +297,7 @@ header {
   font-style: normal;
   font-weight: 300;
   font-size: 17px;
+  line-height: 20px;
   color: black;
 }
 .menus .card__description i {
@@ -332,48 +320,50 @@ header {
 
 /* Footer */
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   background-color: #353535;
-  padding: 1.5rem;
-  height: 75px;
+  padding-bottom: 1rem;
 }
-
-footer li, a, h3, i {
+@media (min-width: 1024px) {
+  footer {
+    padding: 1.89rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .footer__list h2 {
+    position: absolute;
+    right: 4rem;
+  }
+  footer .footer__list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+footer .footer__list a {
   color: white;
+  text-decoration: none;
 }
-
-footer i {
-  width: 11px;
-  margin-right: 1rem;
+footer .footer__list li {
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem 0rem;
+  margin: 0;
+  text-decoration: none;
 }
-
-footer .footer__list {
-  display: flex;
-  align-items: center;
-}
-
-footer h3 {
-  margin-left: 10px;
+footer .footer__list h2 {
   color: white;
   font-family: "Shrikhand";
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
 }
-
-footer .footer__list a {
-  text-decoration: none;
-}
-
-footer li {
-  justify-content: space-between;
-  padding: 1rem;
-  margin: 10px;
-  text-decoration: none;
-}
-
 footer .footer__list i {
   width: 11px;
   margin-right: 1rem;
