@@ -1,0 +1,50 @@
+@use "../utils/mixins.scss";
+@use "../utils/colors.scss";
+@use "../utils/anim.scss";
+
+.banner img {
+    min-width: 359px;
+    display: block;
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#menu-mage {
+    header{
+        color: black;
+    }
+}
+
+.resto_1 {
+    min-width: 358px;
+    margin-top: -4rem;
+    background-color: colors.$lightgrey;
+    max-width: 100%;
+
+}
+
+h2 {
+    font-family: "Shrikhand", "sans-serif";
+    padding: 2rem 1rem;
+    background-color: colors.$lightgrey;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+}
+
+
+& h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+
+.cartes {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    background-color: colors.$lightgrey;
+}
