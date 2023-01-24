@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -367,4 +361,311 @@ footer .footer__list h2 {
 footer .footer__list i {
   width: 11px;
   margin-right: 1rem;
+}
+
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.banner img {
+  min-width: 358px;
+  display: block;
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (min-width: 1024px) {
+  .banner img {
+    height: 70vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+#menu-page header {
+  color: black;
+}
+#menu-page header::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  left: 1rem;
+  top: 50px;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+#menu-page .resto_1 {
+  min-width: 358px;
+  margin-top: -4rem;
+  background-color: #F8F8F8;
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  #menu-page .resto_1 {
+    max-width: 100%;
+    width: 50%;
+    margin-top: -7rem;
+    padding-left: 25%;
+  }
+}
+#menu-page .resto_1 h2 {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 2rem 1rem;
+  background-color: #F8F8F8;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+}
+#menu-page .resto_1 .like {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+#menu-page .resto_1 .like::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 1.5rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+#menu-page .resto_1 .like::after {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: 1.5rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+}
+#menu-page .resto_1 .like:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+#menu-page .resto_1 h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+#menu-page .resto_1 h4::after {
+  content: "";
+  height: 0.25rem;
+  width: 0.25rem;
+  background-color: #99E2D0;
+  display: inline-block;
+  position: absolute;
+  height: 0.2rem;
+  top: 1.5rem;
+  left: 0rem;
+  width: 3rem;
+}
+#menu-page .cartes {
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  padding: 2rem 1rem;
+  background-color: #F8F8F8;
+}
+#menu-page .cartes .menus_category {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(1) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(2) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(3) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(4) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(5) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(6) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(7) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(8) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(9) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+#menu-page .cartes .menus_category .menu_item:nth-child(10) {
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+#menu-page .cartes .menus_category .menu_item {
+  margin: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  -webkit-animation: slideIn 1s ease-in-out;
+          animation: slideIn 1s ease-in-out;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item_description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0rem 1rem;
+  flex-direction: column;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item_description h3 {
+  font-weight: bold;
+  font-size: medium;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item_description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item__price {
+  margin-left: auto;
+  font-weight: 600;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-end;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item__check {
+  background-color: #99E2D0;
+  overflow: hidden;
+  border-radius: 0px 15px 15px 0px;
+  width: 2.8rem;
+  margin-right: -2.8rem;
+  transition: all 0.2s ease-in-out;
+}
+#menu-page .cartes .menus_category .menu_item:hover .menu-item__check {
+  overflow: hidden;
+  margin-right: 0;
+  width: 4rem;
+}
+#menu-page .cartes .menus_category .menu_item:hover .menu-item__check i {
+  -webkit-animation: quarterspin 0.5s ease-in-out;
+          animation: quarterspin 0.5s ease-in-out;
+}
+#menu-page .cartes .menus_category .menu_item .menu-item__check {
+  overflow: hidden;
+  display: grid;
+  color: white;
+  font-size: 1.5rem;
+  place-items: center;
+}
+#menu-page div.order {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+}
+#menu-page div.order button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  transition: transform 200ms;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 1px 8px -3px #F8F8F8;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+#menu-page div.order button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+#menu-page footer {
+  min-width: 358px;
 }/*# sourceMappingURL=styles.css.map */

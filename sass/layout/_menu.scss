@@ -6,10 +6,6 @@
     background-color: #F6F6F6;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
-    // max-width: 1280px;
-    // margin: auto;
-    // position: relative;
-    // padding: 1.5rem;
     h2{
         margin-bottom: 2rem;
     }
@@ -17,15 +13,9 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
-        // display: flex;
         @media (min-width: 1024px) {
             grid-template-columns: repeat(4, 1fr);
         }
-
-        // a {
-        //     width: 25%;
-        // }
-
         .new{
             position: relative;
         }
