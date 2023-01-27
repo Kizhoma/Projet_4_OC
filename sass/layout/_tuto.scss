@@ -7,6 +7,11 @@
     margin: auto;
     position: relative;
     padding: 1.5rem;
+
+& h2 {
+    position: relative;
+    right: 1rem;
+}
 & ol { 
     list-style-type: none;
     display: flex;

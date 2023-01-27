@@ -22,7 +22,7 @@
         @include mixins.font-awesome($font-weight:900);
         content:"\f060";
         left: 1rem;
-        top: 50px;
+        top: 50%;
         transform: translateY(-50%);
         font-size: 1.5rem;
     }
@@ -35,43 +35,43 @@
     @media (min-width: 1024px){
         max-width: 100%;
         width: 50%;
-        margin-top: -7rem;
+        margin-top: -7rem;  
         padding-left: 25%;
     }
     h2 {
-    font-family: "Shrikhand", "sans-serif";
-    padding: 2rem 1rem;
-    background-color: colors.$lightgrey;
-    border-radius: 2rem 2rem 0 0;
-    position: relative;
+        font-family: "Shrikhand", "sans-serif";
+        padding: 2rem 1rem;
+
+        
+        background-color: colors.$lightgrey;
+        border-radius: 2rem 2rem 0 0;
+        position: relative;
     }
-    .like {
-    @include mixins.heart-animated;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
+    .like{
+        @include mixins.heart-animated;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
     }
     & h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
         &::after {
-        content: "";
-        height: 0.25rem;
-        width: 0.25rem;
-        background-color: colors.$green;
-        display: inline-block;
-        position: absolute;
-        height: 0.20rem;
-        top: 1.5rem;
-        left: 0rem;
-        width: 3rem;
+            content: "";
+            height: 0.25rem;
+            width: 0.25rem;
+            background-color: colors.$green;
+            display: inline-block;
+            position: absolute;
+            height: 0.20rem;
+            top: 1.5rem;
+            left: 0rem;
+            width: 3rem;
         }
     }
 }
-
-
 
 .cartes {
     grid-template-columns: 1fr;
@@ -95,28 +95,28 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            display: flex;
+            display: flex;      
             background-color: white;
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15.0431px;
             animation: slideIn 1s ease-in-out;
-            & .menu-item_description {
+            & .menu-item__description {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 padding: 0rem 1rem;
                 flex-direction: column;
                 h3 {
-                font-weight: bold;
-                font-size: medium;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                    font-weight: bold;
+                    font-size: medium;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 p {
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
             }
             & .menu-item__price {
@@ -149,6 +149,7 @@
                 font-size: 1.5rem;
                 place-items: center;
             }
+
 }
 }
 }
