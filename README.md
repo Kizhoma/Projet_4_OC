@@ -1,3 +1,19 @@
+# Ohmyfood
+Quatrième projet du parcours "Intégrateur web" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
+
+Vous pouvez retrouver [le brief complet ici](https://course.oc-static.com/projects/Développeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+créatif+site+Ohmyfood.pdf)
+
+
+![image](https://user-images.githubusercontent.com/94898151/207743875-ad985360-7ae5-44d1-bd2d-6f14015fa138.png)
+
+
+## Objectifs
+
+- Développer un site proposant le menu de 4 grands restaurants parisiens.
+- Permettre la réservation en ligne et la composition de menus.
+
+## Livrables
+
 - Fonctionnalités:
 
     - Page d'accueil: 
@@ -5,7 +21,7 @@
         * Affichage de la localisation des restaurants. À terme il sera possible de choisir sa localisation pour trouver des restaurants proches d’un certain lieu.
         * Une courte présentation de l’entreprise.
         * Une section contenant les 4 menus sous forme cartes. Au clic sur la carte, l’utilisateur est redirigé vers la page du menu.
-
+   
     - Pages de menu:
 
         * 4 pages contenant chacune le menu d’un restaurant.
@@ -21,6 +37,8 @@
         * Sur la page d’accueil, il contient le logo du site.
         * Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil.
 
+## Animation    
+    
     - Effet graphique et animations:
 
         - Boutons:
