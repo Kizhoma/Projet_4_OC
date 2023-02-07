@@ -43,31 +43,12 @@ header {
   color: #353535;
 }
 
-@-webkit-keyframes quarterspin {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
 @keyframes quarterspin {
   0% {
     transform: rotate(-270deg);
   }
   100% {
     transform: rotate(0);
-  }
-}
-@-webkit-keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 30px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 }
 @keyframes slideIn {
@@ -123,17 +104,10 @@ header {
   background-color: #ffffff;
   z-index: 1;
   opacity: 0.9;
-  -webkit-animation: disappear 1ms 3s forwards ease-in-out;
-          animation: disappear 1ms 3s forwards ease-in-out;
+  animation: disappear 1ms 3s forwards ease-in-out;
 }
 .loader i {
   color: #E685E0;
-}
-
-@-webkit-keyframes disappear {
-  to {
-    transform: scale(0);
-  }
 }
 
 @keyframes disappear {
@@ -315,7 +289,6 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-/* Footer */
 footer {
   position: relative;
   background-color: #353535;
@@ -526,64 +499,44 @@ footer .footer__list i {
   text-overflow: ellipsis;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(1) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-fill-mode: both;
+  animation-delay: 0.1s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(2) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(3) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(4) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(5) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(6) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(7) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(8) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(9) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-fill-mode: both;
+  animation-delay: 0.9s;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(10) {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 #menu-page .cartes .menus_category .menu_item {
   margin: 1rem;
@@ -594,8 +547,7 @@ footer .footer__list i {
   background-color: white;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
-  -webkit-animation: slideIn 1s ease-in-out;
-          animation: slideIn 1s ease-in-out;
+  animation: slideIn 1s ease-in-out;
 }
 #menu-page .cartes .menus_category .menu_item .menu-item__description {
   overflow: hidden;
@@ -637,8 +589,7 @@ footer .footer__list i {
   width: 4rem;
 }
 #menu-page .cartes .menus_category .menu_item:hover .menu-item__check i {
-  -webkit-animation: quarterspin 0.5s ease-in-out;
-          animation: quarterspin 0.5s ease-in-out;
+  animation: quarterspin 0.5s ease-in-out;
 }
 #menu-page .cartes .menus_category .menu_item .menu-item__check {
   overflow: hidden;
