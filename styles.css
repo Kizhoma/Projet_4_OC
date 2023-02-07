@@ -176,7 +176,7 @@ header {
   margin-right: 1rem;
   color: #7E7E7E;
 }
-.tuto li i.fa-store {
+.tuto li i.fa-solid:hover {
   color: #9356DC;
 }
 

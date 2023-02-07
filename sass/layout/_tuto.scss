@@ -55,15 +55,15 @@
         transform: scale(1.02);
         cursor: pointer;    
         transition: 200ms;
+        
     }
     & i.fa-solid {
         margin-right: 1rem;
         color: colors.$grey;
     }
 
-    & i.fa-store {
+    & i.fa-solid:hover{
         color: #9356DC;
-      }
-      
+    }
 }
 }
