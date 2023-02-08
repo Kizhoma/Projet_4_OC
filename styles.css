@@ -19,6 +19,15 @@ header {
   position: relative;
 }
 
+h1 {
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 .city {
   display: flex;
   align-items: center;
@@ -124,7 +133,7 @@ header {
 }
 .tuto h2 {
   position: relative;
-  right: 1rem;
+  right: 0.5rem;
 }
 .tuto ol {
   list-style-type: none;
@@ -132,6 +141,8 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 0rem -5rem;
+  margin-right: -3rem;
 }
 @media (min-width: 1024px) {
   .tuto ol {
@@ -150,6 +161,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  margin: 0rem 3rem;
 }
 .tuto li::before {
   counter-increment: compteListe 1;
@@ -270,6 +282,7 @@ header {
   font-size: 17px;
   line-height: 20px;
   color: black;
+  margin: 0rem;
 }
 .menus .card__description i {
   color: black;
@@ -492,11 +505,13 @@ footer .footer__list i {
   display: grid;
   padding: 2rem 1rem;
   background-color: #F8F8F8;
+  margin-top: -5rem;
 }
 #menu-page .cartes .menus_category {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin: -1.5rem;
 }
 #menu-page .cartes .menus_category .menu_item:nth-child(1) {
   animation-fill-mode: both;
@@ -567,6 +582,7 @@ footer .footer__list i {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-top: -0.5rem;
 }
 #menu-page .cartes .menus_category .menu_item .menu-item__price {
   margin-left: auto;
